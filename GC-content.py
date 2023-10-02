@@ -2,12 +2,20 @@ import tkinter as tk
 from tkinter import messagebox
 
 def calculate_sequence():
-    dna_sequence = dna_entry.get()
+    dna_sequence = dna_entry.get().upper()  # توالی را به حروف بزرگ تبدیل می‌کنیم
     
+    # اگر توالی وارد نشده باشد، پیام خطا نمایش داده می‌شود
     if not dna_sequence:
         messagebox.showerror("Error", "Please enter a DNA sequence.")
         return
     
+    # بررسی صحت توالی وجود A، C، G، T و حروف دیگر
+    valid_bases = set("ACGT")
+    if not all(base in valid_bases for base in dna_sequence):
+        messagebox.showerror("Error", "Invalid characters in DNA sequence.")
+        return
+    
+    # محاسبه توالی RNA و محتوای GC
     rna_sequence = dna_sequence.replace('T', 'U')
     a_count = dna_sequence.count('A')
     c_count = dna_sequence.count('C')
