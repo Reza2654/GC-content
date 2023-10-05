@@ -28,10 +28,10 @@ def calculate_length():
     c_count = dna_sequence.count('C')
     g_count = dna_sequence.count('G')
     t_count = dna_sequence.count('T')
-    u_count = dna_sequence.count('U')
+
     length = len(dna_sequence)
     
-    result_text = f'A Count: {a_count}\nC Count: {c_count}\nG Count: {g_count}\nT Count: {t_count}\nU Count: {u_count}\nLength: {length} bases'
+    result_text = f'A Count: {a_count}\nC Count: {c_count}\nG Count: {g_count}\nT Count: {t_count}\nLength: {length} bases'
     result_label.config(text=result_text)
 
 # ایجاد پنجره
