@@ -1,6 +1,6 @@
 # GC-content v2.1
 - The software window is not maximize
-- Added About option
+- About the software developer
 # GC-content v2
 - Ability to calculate DNA sequence length
 
