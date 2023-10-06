@@ -1,3 +1,7 @@
+# GC-content v2.2
+- Changes in About
+- About color change
+- Changing the software window size to (330x330)
 # GC-content v2.1
 - The software window is not maximize
 - About the software developer
